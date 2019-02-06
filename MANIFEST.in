@@ -1,0 +1,6 @@
+include README.md
+include LICENSE
+include PokerRL/game/_/cpp_wrappers/lib_hand_eval.dll
+include PokerRL/game/_/cpp_wrappers/lib_hand_eval.so
+include PokerRL/game/_/cpp_wrappers/lib_luts.so
+include PokerRL/game/_/cpp_wrappers/lib_luts.dll

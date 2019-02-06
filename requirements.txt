@@ -1,0 +1,4 @@
+requests
+gym==0.10.9
+pycrayon==0.5
+psutil
