@@ -234,7 +234,7 @@ class Flop5Holdem(FlopHoldemRules, LimitPokerEnv):
     SMALL_BLIND = 50
     BIG_BLIND = 100
     ANTE = 0
-    DEFAULT_STACK_SIZE = 3000
+    DEFAULT_STACK_SIZE = 20000
 
     EV_NORMALIZER = 1000.0 / BIG_BLIND  # Milli BB
     WIN_METRIC = Poker.MeasureBB
