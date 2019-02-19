@@ -235,8 +235,8 @@ information processing systems. 2009.
 [3] Heinrich, Johannes, and David Silver. "Deep reinforcement learning from self-play in imperfect-information games."
 arXiv preprint arXiv:1603.01121 (2016).
 
-[4] Jin, Peter H., Sergey Levine, and Kurt Keutzer. "Regret Minimization for Partially Observable Deep Reinforcement
-Learning." arXiv preprint arXiv:1710.11424 (2017).
+[4] Srinivasan, Sriram, et al. "Actor-critic policy optimization in partially observable multiagent environments."
+Advances in Neural Information Processing Systems. 2018.
 
 [5] Brown, Noam, et al. "Deep Counterfactual Regret Minimization." arXiv preprint arXiv:1811.00164 (2018).
 
