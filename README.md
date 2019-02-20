@@ -15,7 +15,7 @@ New algorithms such as Neural Fictitious Self-Play (NFSP)
 Regret Policy Gradients (RPG) [[4]](https://arxiv.org/pdf/1810.09026.pdf),
 Deep Counterfactual Regret Minimization (Deep CFR) [[5]](https://arxiv.org/pdf/1811.00164.pdf),
 and Single Deep CFR [[8]](https://arxiv.org/pdf/1901.07621.pdf)
-have recently combined Deep (Reinforcement) Learning conventional methods like CFR and Fictitious-Play to learn
+have recently combined Deep (Reinforcement) Learning with conventional methods like CFR and Fictitious-Play to learn
 approximate Nash equilibria while only ever visiting a fraction of the game's states.
 
 
