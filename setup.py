@@ -16,7 +16,7 @@ with open('%s/%s' % (osp.dirname(osp.realpath(__file__)), 'requirements_dist.txt
 
 setuptools.setup(
     name="PokerRL",
-    version="0.0.1",
+    version="0.0.2",
     author="Eric Steinberger",
     author_email="ericsteinberger.est@gmail.com",
     description="A framework for Reinforcement Learning in Poker.",
