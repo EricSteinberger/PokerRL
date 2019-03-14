@@ -83,8 +83,8 @@ class LeducRules:
 
 class BigLeducRules:
     N_HOLE_CARDS = 1
-    N_RANKS = 8
-    N_SUITS = 3
+    N_RANKS = 12
+    N_SUITS = 2
     N_CARDS_IN_DECK = N_RANKS * N_SUITS
     RANGE_SIZE = PokerRange.get_range_size(n_hole_cards=N_HOLE_CARDS, n_cards_in_deck=N_CARDS_IN_DECK)
 
@@ -135,7 +135,7 @@ class BigLeducRules:
         for docs refer to PokerEnv
         """
         if board_2d[0, 0] == hand_2d[0, 0]:
-            return 100 + hand_2d[0, 0]
+            return 10000 + hand_2d[0, 0]
         else:
             return hand_2d[0, 0]
 

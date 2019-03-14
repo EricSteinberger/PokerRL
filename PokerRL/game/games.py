@@ -18,8 +18,7 @@ from PokerRL.game._.rl_env.poker_types.NoLimitPokerEnv import NoLimitPokerEnv
 class StandardLeduc(LeducRules, LimitPokerEnv):
     """
     Leduc Hold'em is a very small poker game meant for fast experimentation with new algorithms. It is played with 3
-    ranks and 2 suits. Typically players place an ante of 1, the small_bet is 2, and the big_bet is 4. In this
-    implementation we stick to 10/20/40 to keep order-of-magnitude consitency with the other games.
+    ranks and 2 suits. Typically players place an ante of 1, the small_bet is 2, and the big_bet is 4.
     """
 
     RULES = LeducRules
@@ -51,18 +50,12 @@ class StandardLeduc(LeducRules, LimitPokerEnv):
 
 
 class BigLeduc(BigLeducRules, LimitPokerEnv):
-    """
-    Leduc Hold'em is a very small poker game meant for fast experimentation with new algorithms. It is played with 3
-    ranks and 2 suits. Typically players place an ante of 1, the small_bet is 2, and the big_bet is 4. In this
-    implementation we stick to 10/20/40 to keep order-of-magnitude consitency with the other games.
-    """
-
     RULES = BigLeducRules
     IS_FIXED_LIMIT_GAME = True
     IS_POT_LIMIT_GAME = False
     MAX_N_RAISES_PER_ROUND = {
-        Poker.PREFLOP: 4,
-        Poker.FLOP: 4,
+        Poker.PREFLOP: 6,
+        Poker.FLOP: 6,
     }
 
     SMALL_BLIND = 0
@@ -70,7 +63,7 @@ class BigLeduc(BigLeducRules, LimitPokerEnv):
     ANTE = 1
     SMALL_BET = 2
     BIG_BET = 4
-    DEFAULT_STACK_SIZE = 25
+    DEFAULT_STACK_SIZE = 100
 
     EV_NORMALIZER = 1000.0 / ANTE  # Milli Antes
     WIN_METRIC = Poker.MeasureAnte
