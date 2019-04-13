@@ -100,7 +100,7 @@ class InteractiveGame:
                     action_tuple = self._env.human_api_ask_action()
 
                     if self._eval_agent is not None:
-                        self._eval_agent.notify_of_processed_tuple_action(action_tuple=action_tuple,
+                        self._eval_agent.notify_of_processed_tuple_action(action_he_did=action_tuple,
                                                                           p_id_acted=current_player_id)
 
                 # Agent acts
