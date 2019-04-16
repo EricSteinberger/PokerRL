@@ -62,15 +62,15 @@ class EvalAgentBase:
         """
         raise NotImplementedError
 
-    def get_action_frac_tuple(self, step_env):
+    def get_action_frac_tuple(self, step_env=True):
         """
         Args:
             step_env (bool):        Whether the internal env shall be stepped
-            need_probs (bool):      Whether the action probabilities for all hands shall be returned too
 
         Returns:
             2-tuple:  ((FOLD CALL or RAISE), fraction)
         """
+        raise NotImplementedError
 
     def state_dict(self):
         """ Override and keep base as one field! """
