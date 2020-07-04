@@ -25,7 +25,7 @@ class VanillaWrapper(Wrapper):
         self.env.print_obs(wrapped_obs)
 
     def get_current_obs(self, env_obs=None):
-        if env_obs in not None:
+        if env_obs is not None:
             return env_obs
         return self.env.get_current_obs()
 
